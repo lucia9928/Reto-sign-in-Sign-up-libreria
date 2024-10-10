@@ -10,6 +10,6 @@ package modelo;
  * @author 2dam
  */
 public interface Signable {
-    public Usuario registrar(Usuario user);
+    public Usuario registrar(Usuario user) throws Exception;
     
 }
