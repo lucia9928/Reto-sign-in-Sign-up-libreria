@@ -12,12 +12,11 @@ import java.time.LocalDate;
  *
  * @author 2dam
  */
-public class Usuario implements Serializable {
+public class Usuario implements Serializable{
 
     private String nombre;
     private String apellido;
     private String email;
-    private String contrasena;
     private LocalDate fechaNacimiento;
     private int telefono;
 
@@ -31,10 +30,6 @@ public class Usuario implements Serializable {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public void setContrasena(String contrasena) {
-        this.contrasena = contrasena;
     }
 
     public void setFechaNacimiento(LocalDate fechaNacimiento) {
@@ -55,10 +50,6 @@ public class Usuario implements Serializable {
 
     public String getEmail() {
         return email;
-    }
-
-    public String getContrasena() {
-        return contrasena;
     }
 
     public LocalDate getFechaNacimiento() {
