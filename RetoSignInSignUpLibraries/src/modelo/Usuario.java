@@ -19,6 +19,15 @@ public class Usuario implements Serializable{
     private String email;
     private LocalDate fechaNacimiento;
     private int telefono;
+    private String contrasena;
+
+    public String getContrasena() {
+        return contrasena;
+    }
+
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
+    }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
