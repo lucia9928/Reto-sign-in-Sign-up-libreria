@@ -12,6 +12,5 @@ import excepciones.CreateException;
  * @author 2dam
  */
 public interface Signable {
-    public Usuario registrar(Usuario user) throws CreateException;
-    
+    public void registrar(Usuario user) throws CreateException;
 }
