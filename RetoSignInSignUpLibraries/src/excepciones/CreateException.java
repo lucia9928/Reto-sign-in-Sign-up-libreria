@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package modelo;
-
-import excepciones.CreateException;
+package excepciones;
 
 /**
  *
  * @author 2dam
  */
-public interface Signable {
-    public void registrar(Usuario user) throws CreateException;
+public class CreateException extends Exception {
+     public CreateException(String mensaje){
+        super(mensaje);
+    }
 }
