@@ -11,5 +11,7 @@ package modelo;
  */
 public interface Signable {
     public void registrar(Usuario user) throws Exception;
+   public void login(Usuario user) throws Exception;
     
 }
+
