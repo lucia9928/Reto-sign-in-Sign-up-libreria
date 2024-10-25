@@ -20,6 +20,15 @@ public class Usuario implements Serializable{
     private LocalDate fechaNacimiento;
     private int telefono;
     private String contrasena;
+    private Boolean activo;
+
+    public Boolean getActivo() {
+        return activo;
+    }
+
+    public void setActivo(Boolean activo) {
+        this.activo = activo;
+    }
 
     public String getContrasena() {
         return contrasena;
