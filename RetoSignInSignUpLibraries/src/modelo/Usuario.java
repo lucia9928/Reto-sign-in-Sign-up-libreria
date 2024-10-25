@@ -23,13 +23,24 @@ public class Usuario implements Serializable{
     private String ciudad;
     private String email;
     private int telefono;
-
+    private Boolean activo;
+  
     public String getNombre() {
         return nombre;
     }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+
+
+
+    public Boolean getActivo() {
+        return activo;
+    }
+
+    public void setActivo(Boolean activo) {
+        this.activo = activo;
+
     }
 
     public String getContrasena() {
