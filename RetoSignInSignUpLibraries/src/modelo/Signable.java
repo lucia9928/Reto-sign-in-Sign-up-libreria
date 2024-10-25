@@ -5,12 +5,13 @@
  */
 package modelo;
 
-import excepciones.CreateException;
-
 /**
  *
  * @author 2dam
  */
 public interface Signable {
-    public void registrar(Usuario user) throws CreateException;
+    public void registrar(Usuario user) throws Exception;
+   public void login(Usuario user) throws Exception;
+    
 }
+
