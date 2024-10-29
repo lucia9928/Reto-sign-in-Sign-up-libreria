@@ -10,7 +10,7 @@ import java.io.Serializable;
  *
  * @author 2dam
  */
-public class Usuario implements Serializable{
+public class Usuario implements Serializable {
 
     private String nombre;
     private String apellido;
