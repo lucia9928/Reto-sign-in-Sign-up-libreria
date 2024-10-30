@@ -22,7 +22,7 @@ public class Usuario implements Serializable{
     private String codPostal;
     private String ciudad;
     private String email;
-    private int telefono;
+    private String telefono;
     private Boolean activo;
   
     public String getNombre() {
@@ -31,8 +31,8 @@ public class Usuario implements Serializable{
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-
-
+        
+    }
 
     public Boolean getActivo() {
         return activo;
@@ -91,15 +91,18 @@ public class Usuario implements Serializable{
         this.email = email;
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 
-  
+    @Override
+    public String toString() {
+        return "Usuario{" + "nombre=" + nombre + ", contrasena=" + contrasena + ", apellido=" + apellido + ", calle=" + calle + ", codPostal=" + codPostal + ", ciudad=" + ciudad + ", email=" + email + ", telefono=" + telefono + ", activo=" + activo + '}';
+    }
 
   
 
