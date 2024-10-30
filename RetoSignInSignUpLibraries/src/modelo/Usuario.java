@@ -15,7 +15,7 @@ public class Usuario implements Serializable {
     private String nombre;
     private String apellido;
     private String email;
-    private int telefono;
+    private String telefono;
     private String contrasena;
     private Boolean activo;
     private String calle;
@@ -24,6 +24,11 @@ public class Usuario implements Serializable {
 
     public String getCalle() {
         return calle;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+        
     }
 
     public void setCalle(String calle) {
@@ -47,6 +52,7 @@ public class Usuario implements Serializable {
     }
     
 
+
     public Boolean getActivo() {
         return activo;
     }
@@ -63,20 +69,12 @@ public class Usuario implements Serializable {
         this.contrasena = contrasena;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public void setTelefono(int telefono) {
-        this.telefono = telefono;
     }
 
     public String getNombre() {
@@ -90,8 +88,19 @@ public class Usuario implements Serializable {
     public String getEmail() {
         return email;
     }
-    public int getTelefono() {
+
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getTelefono() {
         return telefono;
     }
 
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+ 
 }

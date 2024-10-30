@@ -3,16 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package modelo;
+package utils;
 
 /**
  *
  * @author 2dam
  */
-public interface Signable {
-
-    public void registrar(Usuario user) throws Exception;
-    public Usuario login(Usuario user) throws Exception;
-
+public class Errores extends Exception{
+    
+    
+    
 }
-
