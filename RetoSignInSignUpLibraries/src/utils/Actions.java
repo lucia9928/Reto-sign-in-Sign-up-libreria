@@ -14,12 +14,17 @@ import java.io.Serializable;
  * 
  * @author 2dam
  */
-public enum UserAction implements Serializable{
+public enum Actions implements Serializable{
     
     /** Request to register a new user */
     REGISTER_REQUEST,
     
-    /** Request to log in an existing user */
-    LOGIN_REQUEST;
+    LOGGING_REQUEST,
+    
+    LOGGING_FAILED,
+    
+    RESGISTER_FAILED,
+    
+    DATABASE_FAILED;
 
 }
