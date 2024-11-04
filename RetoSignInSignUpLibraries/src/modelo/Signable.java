@@ -5,14 +5,16 @@
  */
 package modelo;
 
+import utils.Actions;
+
 /**
  *
  * @author 2dam
  */
 public interface Signable {
 
-    public void registrar(Usuario user) throws Exception;
-    public Usuario login(Usuario user) throws Exception;
+    public ActionUsers registrar(ActionUsers user) throws Exception;
+    public ActionUsers login(Usuario user) throws Exception;
 
 }
 

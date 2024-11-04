@@ -9,8 +9,27 @@ package utils;
  *
  * @author 2dam
  */
-public class Errores extends Exception{
-    
-    
-    
+public class Errores {
+
+
+    public static class DatabaseConnectionException extends Exception {
+        public DatabaseConnectionException(String message) {
+            super(message);
+        }
+    }
+
+
+    public static class UserAlreadyExistsException extends Exception {
+        public UserAlreadyExistsException(String message) {
+            super(message);
+        }
+    }
+
+
+    public static class AuthenticationFailedException extends Exception {
+        public AuthenticationFailedException(String message) {
+            super(message);
+        }
+    }
+
 }
