@@ -5,7 +5,7 @@
  */
 package modelo;
 
-import utils.Actions;
+import utils.Errores;
 
 /**
  *
@@ -13,8 +13,9 @@ import utils.Actions;
  */
 public interface Signable {
 
-    public ActionUsers registrar(ActionUsers user) throws Exception;
-    public ActionUsers login(Usuario user) throws Exception;
+    public ActionUsers registrar(ActionUsers user)  throws Errores.DatabaseConnectionException, Errores.UserAlreadyExistsException, Errores.AuthenticationFailedException, Errores.PropertiesFileException, Errores.ServerConnectionException ;
+    public ActionUsers login(ActionUsers user) throws Exception;
 
 }
+
 
