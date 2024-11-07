@@ -5,13 +5,14 @@
  */
 package modelo;
 
+import java.io.Serializable;
 import utils.Actions;
 
 /**
  *
  * @author 2dam
  */
-public class ActionUsers {
+public class ActionUsers implements Serializable{
     
     private Usuario user;
     private Actions action;

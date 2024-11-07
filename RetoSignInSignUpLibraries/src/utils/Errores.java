@@ -31,5 +31,17 @@ public class Errores {
             super(message);
         }
     }
+    
+    public static class ServerConnectionException extends Exception {
+
+        public ServerConnectionException(String message) {
+            super(message);
+        }
+    }
+    public static class PropertiesFileException extends Exception {
+        public PropertiesFileException(String message) {
+            super(message);
+        }
+    }
 
 }

@@ -18,13 +18,20 @@ public enum Actions implements Serializable{
     
     /** Request to register a new user */
     REGISTER_REQUEST,
-    
-    LOGGING_REQUEST,
-    
-    LOGGING_FAILED,
-    
-    RESGISTER_FAILED,
-    
-    DATABASE_FAILED;
 
+    LOGGING_REQUEST,
+
+    LOGGING_FAILED,
+
+    RESGISTER_FAILED,
+
+    LOGGING_OK,
+
+    REGISTER_OK,
+
+    DATABASE_FAILED,
+
+    PROPERTIESFILE_FAILED,
+
+    SERVER_FAILED;
 }
