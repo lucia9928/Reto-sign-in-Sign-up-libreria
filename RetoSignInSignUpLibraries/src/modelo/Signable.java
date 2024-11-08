@@ -5,13 +5,17 @@
  */
 package modelo;
 
+import utils.Errores;
+
 /**
  *
  * @author 2dam
  */
 public interface Signable {
-    public void registrar(Usuario user) throws Exception;
-   public void login(Usuario user) throws Exception;
-    
+
+    public ActionUsers registrar(ActionUsers user)  throws Errores.DatabaseConnectionException, Errores.UserAlreadyExistsException, Errores.AuthenticationFailedException, Errores.PropertiesFileException, Errores.ServerConnectionException ;
+    public ActionUsers login(ActionUsers user) throws Errores.DatabaseConnectionException, Errores.UserAlreadyExistsException, Errores.AuthenticationFailedException, Errores.PropertiesFileException, Errores.ServerConnectionException ;;
+
 }
+
 
