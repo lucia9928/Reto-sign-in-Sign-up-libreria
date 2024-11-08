@@ -14,7 +14,7 @@ import utils.Errores;
 public interface Signable {
 
     public ActionUsers registrar(ActionUsers user)  throws Errores.DatabaseConnectionException, Errores.UserAlreadyExistsException, Errores.AuthenticationFailedException, Errores.PropertiesFileException, Errores.ServerConnectionException ;
-    public ActionUsers login(ActionUsers user) throws Exception;
+    public ActionUsers login(ActionUsers user) throws Errores.DatabaseConnectionException, Errores.UserAlreadyExistsException, Errores.AuthenticationFailedException, Errores.PropertiesFileException, Errores.ServerConnectionException ;;
 
 }
 
